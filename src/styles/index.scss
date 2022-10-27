@@ -1,0 +1,266 @@
+@import "./element.scss";
+@import './variables.scss';
+@import './sidebar.scss';
+
+html,body{
+    height: 100%;
+}
+html,
+body,
+a,
+p{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 清除浏览器记忆功能填充颜色问题 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill{
+  box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  min-width: 1200px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.ml5{
+  margin-left: 5px;
+}
+.ml6{
+  margin-left: 6px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.ml15{
+  margin-left: 15px;
+}
+.ml20{
+  margin-left: 20px;
+}
+.ml30{
+  margin-left: 30px;
+}
+.mr5{
+  margin-right: 5px;
+}
+.mr6{
+  margin-right: 6px;
+}
+.mr10{
+  margin-right: 10px;
+}
+.mr15{
+  margin-right: 15px;
+}
+.mr20{
+  margin-right: 20px;
+}
+.mr30{
+  margin-right: 30px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+
+.mb5{
+  margin-bottom: 5px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+
+
+.pl5{
+  padding-left: 5px;
+}
+.pl10{
+  padding-left: 10px;
+}
+.pl15{
+  padding-left: 15px;
+}
+.pl20{
+  padding-left: 20px;
+}
+.pl30{
+  padding-left: 30px;
+}
+
+.pr5{
+  padding-right: 5px;
+}
+.pr10{
+  padding-right: 10px;
+}
+.pr15{
+  padding-right: 15px;
+}
+.pr20{
+  padding-right: 20px;
+}
+.pr30{
+  padding-right: 30px;
+}
+
+.pt5{
+  padding-top: 5px;
+}
+.pt10{
+  padding-top: 10px;
+}
+.pt15{
+  padding-top: 15px;
+}
+.pt20{
+  padding-top: 20px;
+}
+.pt30{
+  padding-top: 30px;
+}
+.pb5{
+  padding-bottom: 5px;
+}
+.pb10{
+  padding-bottom: 10px;
+}
+.pb15{
+  padding-bottom: 15px;
+}
+.pb20{
+  padding-bottom: 20px;
+}
+.pb30{
+  padding-bottom: 30px;
+}
+.bold{
+  font-weight: bold;
+}
+.creatTitle{
+  display: inline-block;
+}
+.dinb{
+  display: inline-block;
+}
+.curp{
+  cursor: pointer;
+}
+.el-icon-duigou{
+  color: #409EFF;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.v-modal{
+  opacity: .3;
+  background: #333;
+}
+.el-table tbody tr:hover > td {
+  background-color: #f3faff !important;
+}
+.el-table__body tr.current-row > td {
+  background-color: #f0f9eb !important;
+  cursor: pointer;
+}
+.grayLine {
+  height: 10px;
+  background: #F2F2F2;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  box-shadow: 0px -1px 0px rgb(0 0 0 / 16%);
+}
+.w-e-content-preview p {
+  width: 100%;
+  word-wrap: break-word;
+}
+.tooltipStyleProjectMgr {
+  width: 500px;
+ font-size: 14px !important;
+ color: #303133 !important;
+ line-height: 26px;
+ border-color: transparent !important;
+ box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}

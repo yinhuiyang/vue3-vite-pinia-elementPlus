@@ -1,0 +1,428 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// 分页样式
+.el-pagination.is-background {
+  .btn-next,.btn-prev,.el-pager li{
+    background: white;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    margin: 0 3px;
+  }
+  .el-pager li:not(.disabled).active{
+    background-color: #1D87E5;
+  }
+  .el-pagination__total,
+  .el-input__inner{
+    height: 24px;
+    line-height: 26px;
+  }
+  .el-pagination__total{
+    margin-left: 7px;
+    margin-right: 0;
+  }
+  .el-pagination__sizes{
+    margin-right: 7px;
+    .el-select,.el-input{
+      width: 100px;
+      height: 24px;
+      line-height: 24px;
+      .el-input__inner{
+        height: 100%;
+        line-height: 100%;
+      }
+      .el-input__suffix{
+        .el-input__suffix-inner{
+          .el-input__icon{
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .el-pagination__jump{
+    margin-left: 7px;
+  }
+  .el-pagination__editor{
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    width: 50px;
+  }
+}
+
+// 表单每一项下边距改为15px
+.el-form-item{
+  margin-bottom: 15px;
+}
+
+.el-pagination span:not([class*=suffix]){
+  height: 24px;
+  line-height: 24px;
+}
+
+// 下拉框/级联框样式
+.el-select,.el-cascader,.el-date-editor{
+  width: 220px;
+  height: 34px;
+  line-height: 34px;
+  .el-input{
+    width: 100%;
+    .el-input__inner{
+      height: 34px;
+      line-height: 34px;
+    }
+  }
+  .el-input__suffix{
+    .el-input__suffix-inner{
+      .el-input__icon{
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+//  下拉菜单样式 
+.el-select-dropdown__item{
+  padding: 0 15px;
+}
+
+// 级联的下拉菜单样式
+.el-cascader-node{
+  padding:0 30px 0 15px;
+  .el-cascader-node__label{
+    padding-left: 10px;
+  }
+  i.el-icon-check{
+    display: none;
+  }
+}
+
+// 输入框样式
+.el-input{
+  width: 220px;
+  height: 34px;
+  line-height: 34px;
+  .el-input__inner{
+    height: 34px;
+    line-height: 34px;           
+  }
+  .el-input__suffix{
+    .el-input__suffix-inner{
+      .el-input__icon{
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+.el-date-editor{
+  .el-input__prefix{
+    .el-input__icon.el-icon-time,.el-input__icon{
+      line-height: 34px;
+    }
+  }
+}
+
+// tab激活得颜色
+.el-tabs__item.is-active{
+  color: #1D87E5;   
+}
+
+.el-tabs__active-bar{
+  background-color:#1D87E5 ;
+}
+
+// 按钮样式
+// 默认是最大按钮
+.el-button{
+  min-width: 88px;
+  padding: 0 12px;
+  height: 34px;
+  line-height: 30px;
+  border-radius: 4px;
+  &:hover,&:focus{
+    border-color: #B4B4B4;
+    background-color: white;
+    color: #606266;
+  }
+}
+
+// 小按钮
+.el-button.el-button--small{
+  min-width:56px;
+  height: 28px;
+  line-height: 20px;
+}
+// 最小按钮
+.el-button.el-button--mini{
+  min-width:48px;
+  height: 24px;
+  line-height: 22px;
+}
+// 图标按钮
+.el-button.el-button--icon{
+  min-width:24px;
+  width:24px;
+  height: 24px;
+  line-height: 20px;
+  padding:3px;
+}
+
+// 一级按钮颜色（最外层按钮颜色）
+.el-button--primary{
+  background-color: #4D70E1;
+  border-color: #4D70E1;
+  &:hover,&:focus{
+    border-color: #399AEF;
+    background-color: #399AEF;
+    color: white;
+  }
+}
+// 一级按钮颜色（最外层按钮颜色）
+.el-button--download{
+  background: #F6F8F9 0% 0% no-repeat padding-box;
+  border: 1px solid #DCDFE6;
+  border-radius: 4px;
+  opacity: 1;
+  width: 202px;
+  height: 60px;
+  color: #409eff;
+  font-size: 24px;
+  i{
+    font-size: 40px;
+    vertical-align: sub;
+    margin-right: 15px;
+  }
+  &:hover,&:focus{
+    border-color: #F6F8F9;
+    background-color: #DCDFE6;
+    color: #399AEF;
+  }
+}
+
+// 页面内的非一级按钮
+.el-button--info{
+  background-color: white;
+  border-color: #409EFF;
+  color:#409EFF;
+  &:hover,&:focus{
+    border-color: #A4D2FF;
+    background-color: white;
+    color:#409EFF;
+  }
+}
+
+// 同意操作按钮，只用于表格中的操作
+.el-button--success{
+  background-color: #6386E9;
+  border-color: #6386E9   ;
+  color:#409EFF;
+  &:hover,&:focus{
+    background-color: white;
+    border-color: #A4D2FF;
+    color:#409EFF;
+  }
+}
+.el-button--success.is-disabled{
+    color: #FFF;
+    background-color: #d1e8ff;
+    border-color: #d1e8ff;
+    &:hover,&:focus{
+      color: #FFF;
+      background-color: #d1e8ff;
+      border-color: #d1e8ff;
+    }
+}
+
+// 拒绝操作按钮，只用于表格中的操作
+.el-button--danger{
+  background-color: #FEF0F0;
+  border-color: #FBC4C4;
+  color:#F56C6C;
+  &:hover,&:focus{
+    border-color: #FBC4C4;
+    background-color: #FFF8F8;
+    color:#F56C6C;
+  }
+}
+
+// 弹框的确定取消按钮默认居中
+.el-dialog__footer{
+  text-align: center;
+}
+
+//错误提示的样式
+.el-form-item__error{
+  padding-top:1px;
+}
+
+// 表格默认样式
+.el-table{
+  font-size: 12px;
+  .el-table__header-wrapper{
+    tr th{
+      background:rgb(246, 248, 249);
+      padding:0 0;
+      .cell{
+        color:#888888;
+        font-weight:bold;
+        line-height: 34px;
+        height: 34px;
+      }
+    }
+  }
+  .el-table__body{
+    color: #303133;
+  }
+}
+
+// form表单默认行高
+.el-form-item__label{
+  line-height: 34px;
+  font-weight: normal;
+  color: #303133;
+}
+.el-form-item__content{
+  line-height: 34px;
+}
+
+// 确认弹框按钮居中
+.el-message-box{
+  .el-message-box__content{
+    padding: 30px 20px;
+  }
+  .el-message-box__btns{
+    text-align: center;
+  }
+}
+
+.el-input-number{
+  line-height: 32px;
+  // .el-input{
+  //   width:180px;
+  // }
+  .el-input__inner{
+    text-align: left;
+  }
+}
+
+// 验证的错误提示样式
+.el-form-item__error{
+  position: relative;
+  line-height: 10px;
+  padding-top: 0px;
+  top:7.5px;
+  transition: all linear 200ms;
+}
+
+// 自定义的提示信息
+.form-item-tip{
+  position:relative;
+  line-height: 10px;
+  height: 10px;
+  top:7.5px;
+  font-size: 12px;
+  color: #FBBB5B;
+  white-space: nowrap;
+}
+
+.form-item-tip+.el-form-item__error{
+  margin-top:10px;
+}
+
+.el-input.is-disabled .el-input__inner,.el-textarea.is-disabled .el-textarea__inner{
+  color: #888888;
+}
+.el-radio__input.is-disabled .el-radio__inner, .el-radio__input.is-disabled.is-checked .el-radio__inner{
+  background-color: #fff;
+}
+.el-checkbox__input.is-disabled .el-checkbox__inner{
+  background-color: #fff;
+}
+
+
+.el-dropdown-menu__item{
+  min-width: 120px;
+}
+
+.el-popover{
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  .popper__arrow{
+    display: none;
+  }
+}
+.el-popover::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+  /**/
+}
+ /*滚动条的轨道*/
+ .el-popover::-webkit-scrollbar-track {
+  background: rgb(239, 239, 239);
+  border-radius: 2px;
+}
+ /*滚动条的滑块按钮*/
+ .el-popover::-webkit-scrollbar-thumb {
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+/*悬浮滚动条的滑块按钮*/
+.el-popover::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.el-popover::-webkit-scrollbar-corner {
+  background: #179a16;
+}
